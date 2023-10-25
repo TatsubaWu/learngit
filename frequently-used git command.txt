@@ -1,0 +1,17 @@
+git init: 将当前目录变成Git可以管理的仓库。
+
+把文件添加到版本库
+git add filename: 把文件添加到仓库
+git commit -m "instruction": 把文件提交到仓库，并附上相关的提交说明
+commit提交此前add的所有文件
+
+
+时光机穿梭
+	仓库状态查看
+	git status: 查看仓库当前的状态
+	git diff: 查看还未提交的具体修改
+	
+	版本回退
+	git log: 显示从最近到最远的提交日志；加上--pretty=oneline参数可在一行显示一次提交日志
+	git reset --hard commit_id: 回退到commit_id对应的版本；HEAD表示当前版本，HEAD~n表示往上第n的版本
+	git reflog: 查看命令历史，以便确定要回到未来的哪个版本
