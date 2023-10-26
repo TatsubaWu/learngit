@@ -18,3 +18,7 @@ commit提交此前add的所有文件
 	
 	管理修改
 	git diff HEAD -- filename: 查看工作区和版本库里最新版本的区别
+	
+	撤销修改
+	git checkout -- filename: 让文件回到最近一次git commit或git add时的状态
+	git reset HEAD filename: 把暂存区的修改撤销掉，重新放回工作区
