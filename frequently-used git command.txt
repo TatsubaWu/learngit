@@ -26,3 +26,9 @@ commit提交此前add的所有文件
 	删除文件
 	git rm filename: 从版本库中删除文件，同样需要commit
 	git checkout -- filename: 在本地误删后，可以用该命令复原
+
+远程仓库
+	添加远程库
+	git remote add origin git@server-name:path/repo-name.git: 关联远程库(origin为远程库默认习惯命名)
+	git push -u origin master: 第一次推送master分支的所有内容
+	git push origin master: 第一次推送后，用于推送最新修改
